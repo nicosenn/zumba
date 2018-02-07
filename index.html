@@ -19,9 +19,6 @@
 	
     <!-- Material Design Bootstrap -->
     <link href="css/mdb.min.css" rel="stylesheet">
-
-    <link rel="stylesheet" href="style.css">
-
 </head>
 
 <body>
@@ -597,16 +594,16 @@
                                 <div>
                                     <form action="send.php" method="post">
                                         <div class="form-group">
-                                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nombre">
+                                            <input type="text" class="form-control" name="name" placeholder="Nombre"  required>
                                         </div>
                                         <div class="form-group">
-                                            <input type="email" class="form-control" id="exampleInputPassword1" placeholder="Email">
+                                            <input type="email" class="form-control" name="email" placeholder="Email" required>
                                         </div>
                                         <div class="form-group">
-                                            <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Asunto">
+                                            <input type="text" class="form-control" name="asunto" placeholder="Asunto" required>
                                         </div>
                                         <div class="form-group">
-                                            <textarea style="border: none;" class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Mensaje"></textarea>
+                                            <textarea style="border: none;" name="message" class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Mensaje"></textarea>
                                         </div>
                                         <input style="margin-top: 50px;" align="center" class="btn btn-default btn-lg" type="submit" value="Enviar" id="boton">
                                     </form>
